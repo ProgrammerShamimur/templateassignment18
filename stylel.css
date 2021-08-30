@@ -1,0 +1,543 @@
+/* =====================================
+               #default  css
+ =======================================*/
+ *{
+    padding: 0;
+    margin: 0;
+}
+.fix-width{
+    max-width: 1420px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.text-color{
+    color: #767676;
+}
+p{
+    color: #767676;
+}
+/* btn{
+    color: #e0a945;
+} */
+/* =====================================
+               #header section  css
+ =======================================*/
+ .header {
+    background: #fff;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid #ddd;
+}
+.header-logo{
+    width: 35%;
+}
+.header-logo img{
+    width: 110px;
+    margin-bottom: -6px;
+}
+.header-menu{
+    width: 65%;
+}
+.header-menu ul{
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-menu ul li a {
+    display: block;
+    font-size: 19px;
+    color: #000;
+    padding: 0 18px;
+    font-family: sans-serif;
+    line-height: 64px;
+}
+
+
+/* =====================================
+               #banner section  css
+ =======================================*/
+ .banner {
+    background: url(./bannerimage.jpg) no-repeat scroll;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 289px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 85px;
+}
+.banner-text{}
+.banner-text span {
+    color: #fff;
+    font-size: 39px;
+}
+.banner-text h2 {
+    color: #fff;
+    font-size: 89px;
+    margin: 29px 0;
+}
+
+.default-btn {
+    display: inline-block;
+    color: #7d7d7d;
+    font-size: 21px;
+    padding: 25px 37px;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: all .4s;
+}
+.default-btn:hover{
+    color: #fff;
+    background-color: #ef972e;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.301);
+    z-index: -1;
+}
+
+
+/* =====================================
+               #service section  css
+ =======================================*/
+ .service{
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+ .service-heading{
+    padding-bottom: 75px;
+}
+.service-heading h2 {
+    font-size: 61px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+/* .service-heading p {
+    font-size: 18px;
+    margin-bottom: 50px;
+} */
+.service-heading p {
+    color: #444040;
+    font-size: 18px;
+    font-weight: 500;
+}
+ .service-section{}
+
+ .service-item {
+    width: 32%;
+    margin-right: 2%;
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgb(29 47 62 / 12%);
+}
+.service-item:last-child{
+    margin-right: 0;
+}
+ .service-header{
+     padding: 30px;
+     border-bottom: 1px solid #ddd;
+     transition: all .4s;
+ }
+ .service-header h5 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.service-header h1 {
+    background: #f4f4f4;
+    font-size: 52px;
+    padding: 0 13px;
+    transition: all .4s;
+}
+.service-header h1 span {
+    font-size: 22px;
+    margin-left: 6px;
+}
+.service-header h6 {
+    font-size: 23px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.service-header p {
+    color: #444040;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.service-details {
+    padding: 30px;
+    margin: 22px 0 0px 0;
+}
+ .service-details ul{
+     list-style: none;
+ }
+ .service-details ul li {
+    color: #767676;
+    font-size: 25px;
+    margin-bottom: 21px;
+    font-weight: 400;
+}
+.service-details ul li span {
+    display: inline-block;
+    color: #ef972e;
+    font-size: 33px;
+    width: 53px;
+}
+
+
+.service-footer {
+    text-align: center;
+    margin-top: 53px;
+}
+
+
+.service-footer .default-btn {
+    box-shadow: 3px 4px 30px 0 rgb(110 130 225 / 30%);
+    padding: 18px 30px;
+    transition: all .4s;
+}
+.service-item:hover .service-header{
+    background: #ef972e;
+    color: #fff;
+}
+.service-item:hover .service-header h1{
+    background: #e48f27;
+    color: #fff;
+}
+.service-item:hover .service-footer .default-btn{
+    background: #ef972e;
+    color: #fff;
+}
+
+/* =====================================
+               #team section  css
+ =======================================*/
+
+.team{
+    padding: 50px 0;
+}
+.team-title {
+    text-align: center;
+    padding: 0 0 60px 0;
+}
+.team-title h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.team-members{
+}
+.member {
+    width: 23.5%;
+    margin-right: 2%;
+    border: 6px double #ef972e;
+    box-sizing: border-box;
+}
+.member:last-child{
+    margin-right: 0;
+}
+.member img {
+    width: 326px;
+}
+.team-bio {
+    margin-left: 23px;
+    padding: 20px 0;
+}
+.team-bio h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.team-bio p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* =====================================
+               #newslatter section  css
+ =======================================*/
+ .newslatter{
+     padding: 100px 0;
+     background-color: #f4f4f4;
+ }
+ .newslatter-title {
+     padding-bottom: 35px;
+}
+ .newslatter-title p {
+    margin-bottom: 36px;
+}
+.newslatter-title h2 {
+    font-size: 56px;
+}
+ .newslatter-form{}
+ .input-type {
+    width: 520px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid #a19a3ed6;
+    font-size: 23px;
+    box-shadow: 3px 4px 30px 0 rgba(110, 130, 225, .1);
+    transition: .4s;
+    outline: none;
+    box-sizing: border-box;
+}
+.input-type:focus{
+    border: 2px solid #2b7763;
+    box-shadow: 3px 4px 30px 0 rgba(77, 100, 218, 0.5);
+}
+ 
+
+.submit-button {
+    background: #ad9227;
+    color: #fff;
+    border: none;
+    padding: 19px 83px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 33px;
+    box-shadow: 3px 4px 30px 0 rgb(110 130 225 / 10%);
+    transition: all .4s;
+    border: 2px solid transparent;
+    font-size: 23px;
+    font-weight: 400;
+}
+.submit-button:hover{
+    box-shadow: 3px 4px 30px 0 rgba(110, 130, 225, .5);
+    background: #fff;
+    color: #bd9045;
+    border: 2px solid #a19a3ed6;
+}
+
+
+
+/* =====================================
+               #blog section  css
+ =======================================*/
+ .blog{
+     padding: 5px 0;
+ }
+ .blog-heading {
+    padding: 15px 0 21px 0;
+}
+ .blog-heading h2{
+     font-size: 50px;
+     font-weight: 600;
+ }
+ .blog-item{}
+ .blog-image{
+     width: 48%;
+ }
+ .blog-image img{
+     width: 100%;
+ }
+ .blog-content{
+     width: 48%;
+ }
+ 
+ .blog-content-details{
+     margin-top: 40px;
+ }
+ 
+ .blog-content h5 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #565656;
+    margin-bottom: 30px;
+}
+.blog-content h5 span {
+    display: inline-block;
+    margin-right: 18px;
+}
+.blog-content p {
+    margin-bottom: 30px;
+    color: #4e4545;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+
+/* =====================================
+               #testimonial section css
+ =======================================*/
+ .testimonial{
+     background: #f5f5f5;
+    padding: 100px 0;
+}
+.testimonial-title{}
+.testimonial-title p {
+    margin-bottom: 55px;
+    font-size: 20px;
+}
+.testimonial-title h2 {
+    font-size: 55px;
+    font-weight: 500;
+}
+.testimonial-items{
+    margin-top: 100px;
+}
+.t-item {
+    width: 30%;
+    margin-right: 5%;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    height: 433px;
+}
+.t-item:last-child{
+    margin-right: 0;
+}
+.t-content {
+   background: #fff;
+   box-shadow: 3px 4px 30px 0 rgb(110 130 225 / 40%);
+   padding: 53px 30px;
+   box-sizing: border-box;
+   margin-bottom: 42px;
+   position: relative;
+}
+.t-content::after{
+   content: "";
+   position: absolute;
+   bottom: -20px;
+   left: 0;
+   right: 0;
+   margin: auto;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 20px 20px 0 20px;
+   border-color: #ffffff transparent transparent transparent;
+}
+.t-content p {
+   color: #767676;
+   font-size: 21px;
+   line-height: 1.8em;
+   font-weight: 300;
+   position: relative;
+}
+.t-content p::before {
+   content: "\f10d";
+   font-family: FontAwesome;
+   position: absolute;
+   top: -8px;
+   left: -17px;
+   opacity: .14;
+   font-size: 80px;
+}
+.t-user-img {
+    width: 262px;
+    margin: auto;
+    position: relative;
+    top: 4px;
+    left: 15px;
+}
+.t-user-img img {
+    width: 80px;
+    float: left;
+    margin-right: 22px;
+    border: 7px solid #b4962d;
+}
+
+.t-user-bio h4 {
+   font-size: 21px;
+   font-weight: 500;
+   margin-bottom: 8px;
+}
+.t-user-bio p {
+   color: #767676;
+   font-size: 18px;
+   display: inline-block;
+}
+
+
+/* =====================================
+               #contact section css
+ =======================================*/
+ .contact-right-form {
+    width: 900px;
+    margin: 50px auto;
+}
+.contact-right-form h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contact-right-form p {
+    color: #767676;
+    font-size: 23px;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+ .footer-contact-form{
+     margin-top: 70px;
+ }
+ .footer-contact-form .input-type{
+     margin-bottom: 20px;
+     display: inline-block;
+ }
+ .footer-contact-form textarea{
+     height: 220px;
+     outline: none;
+ }
+ .footer-contact-form .submit-button {
+    width: 300px;
+    font-size: 23px;
+    font-weight: 400;
+}
+ .footer-contact-form .w-100{
+     width: 100%;
+ } 
+ .footer-contact-form .w-50{
+     width: 48%;
+ }
+
+/*  */
+ /* =====================================
+               #footer section css
+ =======================================*/
+ .footer{
+     padding: 40px 0;
+ }
+ .footer-text P {
+    font-size: 23px;
+    color: #3c3939;
+    font-weight: 500;
+}
